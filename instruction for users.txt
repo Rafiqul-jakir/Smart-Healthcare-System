@@ -1,0 +1,7 @@
+Default User Details:
+	Username:Sanzida
+	password:sanzida
+
+Default Admin Details:
+	Username: Rafiqul
+	Password: jakir

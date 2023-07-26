@@ -257,15 +257,15 @@ void user_basic_sign_up(char planame[],int days)
     printf("\t\t\tUser name = ");
     getchar();
     gets(user_name);
-    strcpy(temp,user_name);
-    strcat(user_name,".txt");
-    strcat(folder,user_name);
+    strcpy(temp,user_name); // poly
+    strcat(user_name,".txt"); //poly.txt
+    strcat(folder,user_name); //Users List/a_poly.txt
     reg_info = fopen(folder,"w");
     admin_file = fopen("users_list.txt","a");
     pattern_matching = fopen("username_pattern_matching.txt","a");
     if(reg_info == NULL)
     {
-        printf("File does not exist !!\n");
+        printf("\t\t\tFile does not exist !!\n");
     }
     else
     {
@@ -1546,7 +1546,7 @@ void users()
     int number2,r,q;
     system("cls");
     //--------------for loading animation---------------
-    gotoxy(46,10); //from "Rafiqul.h"
+    gotoxy(46,10);
     printf("Loading...");
     gotoxy(46,12);
     for(r=1; r <= 20 ; r++)
